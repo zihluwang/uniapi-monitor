@@ -3,6 +3,9 @@
 // Runtime types generated with workerd@1.20250617.0 2025-06-28 
 declare namespace Cloudflare {
 	interface Env {
+    LARK_BOT_ID: string
+    LARK_SIGN_KEY: string
+    UNIAPI_TOKEN: string
 	}
 }
 interface Env extends Cloudflare.Env {}
