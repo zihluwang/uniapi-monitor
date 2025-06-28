@@ -13,6 +13,10 @@
 
 export default {
   async fetch(request, env, ctx): Promise<Response> {
+    const uniApiToken = env.UNIAPI_TOKEN;
+    const larkBotId = env.LARK_BOT_ID;
+    const larkSignKey = env.LARK_SIGN_KEY;
+
     return new Response("Hello World!")
   },
 } satisfies ExportedHandler<Env>
